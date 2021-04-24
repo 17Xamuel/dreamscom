@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
-    <link rel="stylesheet" href="./font-awesome/css/all.css" />
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
     <title>Dreamscom Technologies Ltd</title>
     <style type="text/css">
       ::-webkit-scrollbar {
@@ -123,6 +123,8 @@
       }
       .mission {
         border-radius: 15px;
+        flex: 1;
+        height: 350px;
         background: #e0e0e0;
         box-shadow: -30px 30px 60px #bebebe, 30px -30px 60px #ffffff;
       }
@@ -185,11 +187,19 @@
 
       /* customer-quote-message-ctr */
       .customer-quote-ctr {
-        padding: 100px 0px;
+        padding: 50px 0px;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        background: #fff;
+      }
+      .customer-quote-hdr {
+        padding-top: 50px;
         font-size: 24px;
         font-weight: 400;
         text-align: center;
-        background: #eeecf6;
+        color: green;
+        background-color: #fff;
       }
       /*customer-quote-message-ctr */
 
@@ -229,6 +239,9 @@
           text-align: center;
           background: #eeecf6;
         }
+        .customer-quote-ctr {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -252,7 +265,7 @@
     <section id="header">
       <div class="container clearfix d-flex flex-wrap align-items-center">
         <div
-          class="contact-info float-left d-block justify-content-center align-items-center flex-grow-1 d-flex d-md-flex d-lg-flex"
+          class="contact-info float-left d-block justify-content-left align-items-center flex-grow-1 d-flex d-md-flex d-lg-flex"
         >
           <div class="">
             <a href="/" class="logo"
@@ -297,7 +310,7 @@
           >
         </div>
 
-        <div class="banner-btn-ctr">
+        <div class="banner-btn-ctr my-4">
           <button class="banner-btn btn btn-primary">Find Services</button>
         </div>
       </div>
@@ -436,39 +449,25 @@
           class="mission m-3 p-5 d-flex align-items-start justify-content-center flex-column text-align-center"
         >
           <div class="mission-icon-ctr">
-            <i class="fas fa-lock"></i>
+            <i class="far fa-arrow-alt-circle-right"></i>
           </div>
           <div class="mission-hdr py-2">Our Mission</div>
           <div class="mission-content">
-            We strve to empower businesses and oranizationswith sustainableit
-            solutions that foster porductivity, maximize efficiency whle
-            reducing operating costs
+            We strive to empower businesses and oranizations with sustainable
+            and affordable IT solutions that foster porductivity, maximize
+            efficiency while reducing operating costs
           </div>
         </div>
         <div
           class="mission m-3 p-5 d-flex align-items-start justify-content-center flex-column text-align-center"
         >
           <div class="mission-icon-ctr">
-            <i class="fas fa-lock"></i>
+            <i class="fas fa-angle-right"></i>
           </div>
-          <div class="mission-hdr py-2">Our Mission</div>
+          <div class="mission-hdr py-2">Our Vision</div>
           <div class="mission-content">
-            We strve to empower businesses and oranizationswith sustainableit
-            solutions that foster porductivity, maximize efficiency whle
-            reducing operating costs
-          </div>
-        </div>
-        <div
-          class="mission m-3 p-5 d-flex align-items-start justify-content-center flex-column text-align-center"
-        >
-          <div class="mission-icon-ctr">
-            <i class="fas fa-lock"></i>
-          </div>
-          <div class="mission-hdr py-2">Our Mission</div>
-          <div class="mission-content">
-            We strve to empower businesses and oranizationswith sustainableit
-            solutions that foster porductivity, maximize efficiency whle
-            reducing operating costs
+            To be a Leading and Preffered Provider of IT Services in Uganda And
+            East Africa
           </div>
         </div>
       </div>
@@ -571,13 +570,22 @@
       <div class="col-md-1"></div>
     </section>
     <section id="customer-quote">
-      <div class="customer-quote-ctr">
+      <div class="customer-quote-hdr">Customer Quote</div>
+      <div
+        class="customer-quote-ctr d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="./images/4-feedback.png"
+          alt=""
+          height="200px"
+          width="200px"
+        />
         <div class="customer-quote">
           "My Organization runs smoothly with IT Services from Dreamscom.
           <br />
           We Got quick computer servicing.",
+          <div class="customer py-3">Yoweri Museveni, President.</div>
         </div>
-        <div class="customer py-3">Yoweri Museveni, President.</div>
       </div>
     </section>
 
@@ -815,26 +823,25 @@
                 <div class=""><hr style="border-color: #718096" /></div>
                 <div class="linkss-footer p-0 m-0 text-white">
                   <span
-                    ><a href=""
-                      ><i class="fa fa-facebook fa-fw p-0 m-0 mt-2"></i></a
+                    ><a
+                      href="https://m.facebook.com/Dreamscom-Technologies-Limited-102776391480463"
+                      ><i class="fab fa-facebook fa-fw p-0 m-0 mt-2"></i></a
                   ></span>
                   <span
                     ><a href=""
-                      ><i class="fa fa-twitter fa-fw p-0 m-0 mt-2"></i></a
+                      ><i class="fab fa-twitter fa-fw p-0 m-0 mt-2"></i></a
                   ></span>
                   <span
                     ><a href=""
-                      ><i class="fa fa-whatsapp fa-fw p-0 m-0 mt-2"></i></a
+                      ><i class="fab fa-whatsapp fa-fw p-0 m-0 mt-2"></i></a
                   ></span>
                   <span
                     ><a href=""
-                      ><i
-                        class="fa fa-linkedin-square fa-fw p-0 m-0 mt-2"
-                      ></i></a
+                      ><i class="fab fa-linkedin fa-fw p-0 m-0 mt-2"></i></a
                   ></span>
                   <span
                     ><a href=""
-                      ><i class="fa fa-youtube fa-fw p-0 m-0 mt-2"></i></a
+                      ><i class="fab fa-youtube fa-fw p-0 m-0 mt-2"></i></a
                   ></span>
                 </div>
               </div>
