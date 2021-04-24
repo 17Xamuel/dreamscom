@@ -1,0 +1,969 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sifudu Peter Masige" />
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha256-m5Awq0wGGRCO7AtN92mhhdGt+TJC70hTou7/t5M11WY="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="stylesheet" href="./font-awesome/css/all.css" />
+    <title>Dreamscom Technologies Ltd</title>
+    <style type="text/css">
+      ::-webkit-scrollbar {
+        width: 10px;
+        background: #000;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #343d46;
+        border-radius: 10px;
+        border: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #28a745;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #e8008a;
+      }
+      ::-webkit-scrollbar-button {
+        color: #000;
+      }
+      ::-webkit-scrollbar-track-piece {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-corner {
+        background: green;
+      }
+    </style>
+    <style>
+      .banner {
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        min-height: fit-content;
+        padding: 20px 0px;
+        margin: 15px 0px;
+        background-color: #eeecf6;
+      }
+      .banner-content {
+        text-align: left;
+        padding: 0px 50px;
+      }
+      .banner-text {
+        margin: 20px 0px;
+        font-size: 24px;
+      }
+      .banner-image {
+        padding: 0px 50px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      /**banner aniamtions*/
+      .banner-image:hover {
+        transform: translateY(-10px);
+      }
+      /**banner aniamtions*/
+      /*trusted by - section*/
+      .trusted-by-hdr {
+        font-size: 35px;
+        font-weight: 500;
+        margin: 25px 0px;
+      }
+      .trusted-by-ctr {
+        padding: 10px 150px;
+        overflow-x: hidden;
+      }
+      .trusted-by {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 25vh;
+        overflow-x: hidden;
+        width: 200px;
+        height: 200px;
+      }
+      .trusted-by-name {
+        font-size: 20px;
+      }
+      .trusted-by-active {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+      }
+      /*trusted by - section*/
+
+      /* section-message-ctr */
+      .section-message-ctr {
+        padding: 100px 0px;
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        background: #eeecf6;
+      }
+      /* section-message-ctr */
+
+      /* section-mission-ctr */
+      #section-mission {
+        background: #eeecf6;
+      }
+      .mission {
+        border-radius: 15px;
+        background: #e0e0e0;
+        box-shadow: -30px 30px 60px #bebebe, 30px -30px 60px #ffffff;
+      }
+      .mission-hdr {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .mission-icon-ctr {
+        color: white;
+        background-color: green;
+        height: 50px;
+        border-radius: 25px;
+        width: 50px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+      .mission-content {
+        font-size: 20px;
+        padding: 10px 0px;
+      }
+      /* section-mission-ctr */
+
+      /* testimonial-mission-ctr */
+      .testimonials-ctr {
+        color: rgb(207, 207, 207);
+      }
+      #testimonials {
+        background: #012181;
+      }
+      .why-u-content {
+        text-align: center;
+      }
+      .why-u {
+        border-radius: 32px;
+        background: #011a65;
+        box-shadow: -10px 10px 20px #000d31, 10px -10px 20px #022799;
+      }
+      .why-u-hdr {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .why-u-icon-ctr {
+        background-color: red;
+        height: 50px;
+        border-radius: 25px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+      }
+      /* testimonial-mission-ctr */
+
+      /* customer-quote-message-ctr */
+      .customer-quote-ctr {
+        padding: 100px 0px;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        background: #eeecf6;
+      }
+      /*customer-quote-message-ctr */
+
+      @media screen and (max-width: 768px) {
+        .banner {
+          height: fit-content;
+          width: 100vw;
+        }
+        .banner-content {
+          text-align: center;
+          padding: 0px;
+        }
+        .banner-image {
+          display: none;
+        }
+        .banner-text {
+          margin: 0px;
+          font-size: 16px;
+        }
+        .trusted-by-ctr {
+          padding: 5px;
+          overflow-x: hidden;
+        }
+        .mission-ctr {
+          flex-direction: column;
+        }
+        .testimonials-i-ctr {
+          flex-direction: column;
+        }
+        .col-md-1 {
+          display: none;
+        }
+        .section-message-ctr {
+          padding: 100px 0px;
+          font-size: 30px;
+          font-weight: 400;
+          text-align: center;
+          background: #eeecf6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container clearfix">
+        <div class="contact-info float-left"></div>
+        <div class="social-links float-right">
+          <!-- <span class="social-links-facebook"><a href=""><i class="fa fa-facebook text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                   <span class="social-links-twitter"><a href=""><i class="fa fa-twitter text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                   <span class="social-links-instagram"><a href=""><i class="fa fa-instagram text-decoration-none d-flex justify-content-center align-items-center"></i></a></span> -->
+          <span style="font-family: 'Poppins', sans-serif">
+            "info@dreamscom.tech"</span
+          >
+          <span style="font-family: 'Poppins', sans-serif">
+            +256 772 280 228 / +256 788 328 170
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="header">
+      <div class="container clearfix d-flex flex-wrap align-items-center">
+        <div
+          class="contact-info float-left d-block justify-content-center align-items-center flex-grow-1 d-flex d-md-flex d-lg-flex"
+        >
+          <div class="">
+            <a href="/" class="logo"
+              ><img src="images/logo.jpg" class="responsive"
+            /></a>
+          </div>
+          <nav class="nav-menu-container">
+            <ul class="nav-menu d-flex flex-wrap">
+              <li class="p-2"><a href="/">Home</a></li>
+              <li class="p-2"><a href="">Services</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-grow-1 d-none d-md-block d-lg-block"></div>
+        <div class="social-links float-right">
+          <nav class="nav-menu-container">
+            <ul class="nav-menu d-flex flex-wrap">
+              <li class="p-2"><a href="/">Our Team</a></li>
+              <li class="p-2"><a href="">Portifolio</a></li>
+              <li class="p-2"><a href="">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!--beginning of the banner container-->
+    <section class="banner d-flex">
+      <div class="banner-content">
+        <div class="banner-hdr">
+          <h1>
+            Connecting You on the ICT Grid<br />
+            With Quality ICT Services
+          </h1>
+        </div>
+        <!-- <div class="banner-text">
+          Mobile Apps &amp; Web Applications | Data Analysis
+        </div> -->
+        <div class="typewriter banner-text">
+          <span class="h1-animate"
+            >Mobile Apps &amp; Web Applications | Data Analysis</span
+          >
+        </div>
+
+        <div class="banner-btn-ctr">
+          <button class="banner-btn btn btn-primary">Find Services</button>
+        </div>
+      </div>
+      <div class="banner-image">
+        <img
+          src="./assets/ict-grid-ddddd.png"
+          alt=""
+          width="500px"
+          height="500px"
+          style="object-fit: contain"
+        />
+      </div>
+    </section>
+    <!--end of the banner container-->
+
+    <!--beginning of the trusted-by container-->
+    <section id="trusted-by">
+      <div class="">
+        <div class="trusted-by-hdr d-flex justify-content-center">
+          Trusted By
+        </div>
+        <div class="container-fluid">
+          <!-- This is the begining of the partner sliders -->
+          <div class="container" id="partners">
+            <section class="customer-logos slider">
+              <div class="slide slide-main">
+                <div>
+                  <img
+                    src="./assets/kigumba-trusted-by.jpg"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="text p-0 p-2 trusted-by-name">
+                  Kigumba Trusted S.S
+                </div>
+              </div>
+              <div class="slide slide-main">
+                <div>
+                  <img
+                    src="./assets/macsoug.jpg"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="text p-0 p-2 trusted-by-name">Macso Uganda</div>
+              </div>
+              <div class="slide slide-main">
+                <div>
+                  <img
+                    src="./assets/utc.jpg"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="text p-0 p-2 trusted-by-name">UTC Lira</div>
+              </div>
+              <div class="slide slide-main">
+                <div>
+                  <img
+                    src="./assets/Taacc-Copy.png"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="text p-0 p-2 trusted-by-name">TAACC - Apac</div>
+              </div>
+              <div class="slide slide-main">
+                <div>
+                  <img
+                    src="./assets/all-saints.png"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="text p-0 p-2 trusted-by-name">
+                  All Saints University Lango
+                </div>
+              </div>
+              <div class="slide slide-main">
+                <div>
+                  <img
+                    src="./assets/download.png"
+                    alt=""
+                    width="100px"
+                    height="100px"
+                    style="object-fit: contain"
+                  />
+                </div>
+                <div class="text p-0 p-2 trusted-by-name">Defend Defenders</div>
+              </div>
+            </section>
+          </div>
+          <!-- This is the end of the partner sliders -->
+        </div>
+      </div>
+    </section>
+    <!--end of the trusted-by container-->
+    <!--beginning of the dreamscom-message container-->
+    <section id="section-message">
+      <div
+        class="section-message-ctr d-flex align-items-center justify-content-center flex-column"
+      >
+        <span>
+          Get Connected to the Proffessionals who can <br />
+          offer quality services at affordable prices
+        </span>
+        <div class="">
+          <button class="btn btn-primary">
+            Get Started <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--end  of the dreamscom-message container-->
+
+    <section
+      id="section-mission"
+      class="d-flex justify-content-center align-items-center py-5"
+    >
+      <div class="col-md-1"></div>
+      <div
+        class="col-md-10 py-5 mission-ctr d-flex justify-content-between align-items-center"
+      >
+        <div
+          class="mission m-3 p-5 d-flex align-items-start justify-content-center flex-column text-align-center"
+        >
+          <div class="mission-icon-ctr">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="mission-hdr py-2">Our Mission</div>
+          <div class="mission-content">
+            We strve to empower businesses and oranizationswith sustainableit
+            solutions that foster porductivity, maximize efficiency whle
+            reducing operating costs
+          </div>
+        </div>
+        <div
+          class="mission m-3 p-5 d-flex align-items-start justify-content-center flex-column text-align-center"
+        >
+          <div class="mission-icon-ctr">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="mission-hdr py-2">Our Mission</div>
+          <div class="mission-content">
+            We strve to empower businesses and oranizationswith sustainableit
+            solutions that foster porductivity, maximize efficiency whle
+            reducing operating costs
+          </div>
+        </div>
+        <div
+          class="mission m-3 p-5 d-flex align-items-start justify-content-center flex-column text-align-center"
+        >
+          <div class="mission-icon-ctr">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="mission-hdr py-2">Our Mission</div>
+          <div class="mission-content">
+            We strve to empower businesses and oranizationswith sustainableit
+            solutions that foster porductivity, maximize efficiency whle
+            reducing operating costs
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </section>
+    <section
+      id="testimonials"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div class="col-md-1"></div>
+      <div class="col-md-10 testimonials-ctr py-5">
+        <h2 class="d-flex justify-content-center py-4">Why choose Us?</h2>
+        <div class="testimonials-i-ctr d-flex d-lg-flex d-ml-flex">
+          <div
+            class="why-u m-3 p-5 d-flex align-items-center justify-content-center flex-column text-align-center"
+          >
+            <div class="why-u-icon-ctr">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="why-u-hdr py-2">SUSTAINABLE DATA SOLUTIONS</div>
+            <div class="why-u-content">
+              We strve to empower businesses and oranizations with sustainable
+              IT solutions that foster porductivity, maximize efficiency whle
+              reducing operating costs. With sustainable data solutions
+            </div>
+          </div>
+          <div
+            class="why-u m-3 p-5 d-flex align-items-center justify-content-center flex-column text-align-center"
+          >
+            <div class="why-u-icon-ctr">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="why-u-hdr py-2">
+              Quality &amp; Quick Service Delivery
+            </div>
+            <div class="why-u-content">
+              We strve to empower businesses and oranizationswith sustainableit
+              solutions that foster porductivity, maximize efficiency whle
+              reducing operating costs
+            </div>
+          </div>
+          <div
+            class="why-u m-3 p-5 d-flex align-items-center justify-content-center flex-column text-align-center"
+          >
+            <div class="why-u-icon-ctr">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="why-u-hdr py-2">Our Mission</div>
+            <div class="why-u-content">
+              We strve to empower businesses and oranizations with sustainableit
+              solutions that foster porductivity, maximize efficiency whle
+              reducing operating costs
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-i-ctr d-flex d-lg-flex d-ml-flex">
+          <div
+            class="why-u m-3 p-5 d-flex align-items-center justify-content-center flex-column text-align-center"
+          >
+            <div class="why-u-icon-ctr">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="why-u-hdr py-2">SUSTAINABLE DATA SOLUTIONS</div>
+            <div class="why-u-content">
+              We strve to empower businesses and oranizationswith sustainableit
+              solutions that foster porductivity, maximize efficiency whle
+              reducing operating costs. With sustainable data solutions
+            </div>
+          </div>
+          <div
+            class="why-u m-3 p-5 d-flex align-items-center justify-content-center flex-column text-align-center"
+          >
+            <div class="why-u-icon-ctr">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="why-u-hdr py-2">
+              Quality &amp; Quick Service Delivery
+            </div>
+            <div class="why-u-content">
+              We strve to empower businesses and oranizationswith sustainableit
+              solutions that foster porductivity, maximize efficiency whle
+              reducing operating costs
+            </div>
+          </div>
+          <div
+            class="why-u m-3 p-5 d-flex align-items-center justify-content-center flex-column text-align-center"
+          >
+            <div class="why-u-icon-ctr">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="why-u-hdr py-2">Our Mission</div>
+            <div class="why-u-content">
+              We strve to empower businesses and oranizationswith sustainableit
+              solutions that foster porductivity, maximize efficiency whle
+              reducing operating costs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </section>
+    <section id="customer-quote">
+      <div class="customer-quote-ctr">
+        <div class="customer-quote">
+          "My Organization runs smoothly with IT Services from Dreamscom.
+          <br />
+          We Got quick computer servicing.",
+        </div>
+        <div class="customer py-3">Yoweri Museveni, President.</div>
+      </div>
+    </section>
+
+    <!-- This is the begining of our already made products -->
+    <div class="row p-0 m-0 mt-5 w-100">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <section class="row p-0 m-0">
+          <div
+            id="sliders"
+            class="carousel slide carousel-fade"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li data-target="#sliders" data-slide-to="0" class="active"></li>
+              <li data-target="#sliders" data-slide-to="1"></li>
+              <li data-target="#sliders" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" id="slide-container">
+              <div class="carousel-item active">
+                <div
+                  class="slider-image"
+                  style="background-image: url('images/medi1.jpg')"
+                ></div>
+                <div class="slider-text">
+                  <div class="row p-0 m-0">
+                    <div class="col-md-2 p-0 m-0"></div>
+                    <div
+                      class="col-md-8 p-0 mt-5 p-3 d-flex flex-column flex-wrap justify-content-center align-items-center flex-grow-1"
+                    >
+                      <h3 class="animated fadeInLeft">Health is life.</h3>
+                      <h1 class="animated fadeInLeft">
+                        Change the lives of people with good medical care...
+                      </h1>
+                      <div class="text animated fadeInUp">
+                        and let the people smile forever
+                      </div>
+                    </div>
+                    <div class="col-md-2 p-0 m-0"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="slider-image"
+                  style="background-image: url('images/educ.jpg')"
+                ></div>
+                <div class="slider-text">
+                  <div class="row p-0 m-0">
+                    <div class="col-md-2 p-0 m-0"></div>
+                    <div
+                      class="col-md-8 p-0 mt-5 p-3 d-flex flex-column flex-wrap justify-content-center align-items-center flex-grow-1"
+                    >
+                      <h3 class="animated fadeInLeft">Education Vs Poverty.</h3>
+                      <h1 class="animated fadeInLeft">
+                        Without Education, our children can never really meet
+                        the challenges they will face...
+                      </h1>
+                      <div class="text animated fadeInUp">
+                        Donate so that others can get a better education.
+                      </div>
+                    </div>
+                    <div class="col-md-2 p-0 m-0"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="slider-image"
+                  style="background-image: url('images/medic1.jpg')"
+                ></div>
+                <div class="slider-text">
+                  <div class="row p-0 m-0">
+                    <div class="col-md-2 p-0 m-0"></div>
+                    <div
+                      class="col-md-8 p-0 mt-5 p-3 d-flex flex-column flex-wrap justify-content-center align-items-center flex-grow-1"
+                    >
+                      <h3 class="animated fadeInLeft">Empower Women.</h3>
+                      <h1 class="animated fadeInLeft">
+                        Change the lives of women by empowering them...
+                      </h1>
+                      <div class="text animated fadeInUp">
+                        In small scale businesses
+                      </div>
+                    </div>
+                    <div class="col-md-2 p-0 m-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#sliders"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#sliders"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <!-- This is the end of our products -->
+    <!-- This is the begining of the footer -->
+    <div class="row p-0 m-0 mt-5 main-footer d-flex flex-fill">
+      <div class="col-md-1 p-0 m-0"></div>
+      <div class="col-md-10 p-0 m-0">
+        <div class="row p-0 m-0 pt-3 d-flex flex-fill justify-content-start">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Dreamscom Technologies Ltd
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="footer-contact-info p-0 m-0">
+                  <div class="p-0 m-0">
+                    <p style="color: #718096">
+                      Plot 19 Maruzi Street Bygon Building<br />P.O Box 130,
+                      Lira Uganda
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Products & Services
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="links-footer p-0 m-0">
+                  <ul>
+                    <li class="p-0 m-0 p-2"><a href="">SchoolSoft</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">PharmacySoft</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">Hospital Manager</a></li>
+                    <li class="p-0 m-0 p-2">
+                      <a href="">Inventory Manager</a>
+                    </li>
+                    <li class="p-0 m-0 p-2"><a href="">SaccoSoft</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Explore
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="links-footer p-0 m-0">
+                  <ul>
+                    <li class="p-0 m-0 p-2"><a href="">About Us</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">Contact Us</a></li>
+                    <li class="p-0 m-0 p-2">
+                      <a href="">Clients and Partners</a>
+                    </li>
+                    <li class="p-0 m-0 p-2"><a href="">News and Events</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Follow Us
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="linkss-footer p-0 m-0 text-white">
+                  <span
+                    ><a href=""
+                      ><i class="fa fa-facebook fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fa fa-twitter fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fa fa-whatsapp fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i
+                        class="fa fa-linkedin-square fa-fw p-0 m-0 mt-2"
+                      ></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fa fa-youtube fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 p-0 m-0"></div>
+    </div>
+  </body>
+</html>
+
+<script src="Bootstrap/dist/jquery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="Bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".customer-logos").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
+  });
+</script>
+<script>
+  var TxtRotate = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = "";
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtRotate.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function () {
+    var elements = document.getElementsByClassName("txt-rotate");
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute("data-rotate");
+      var period = elements[i].getAttribute("data-period");
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+</script>
+<!-- This is the begining of the javascript for the partner sliders -->
+<script>
+  $(document).ready(function () {
+    $(".customer-logos").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+      ],
+    });
+  });
+</script>
