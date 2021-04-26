@@ -1,0 +1,625 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sifudu Peter Masige" />
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha256-m5Awq0wGGRCO7AtN92mhhdGt+TJC70hTou7/t5M11WY="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
+    <title>Dreamscom Technologies Ltd</title>
+    <style type="text/css">
+      ::-webkit-scrollbar {
+        width: 10px;
+        background: #000;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #343d46;
+        border-radius: 10px;
+        border: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #28a745;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #e8008a;
+      }
+      ::-webkit-scrollbar-button {
+        color: #000;
+      }
+      ::-webkit-scrollbar-track-piece {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-corner {
+        background: green;
+      }
+    </style>
+    <style>
+      .services-ctr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 78vw;
+        margin: auto;
+      }
+      .services {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0px;
+      }
+      .service {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px 20px;
+      }
+      .services-hdr-bold {
+        font-size: 45px;
+        margin: 10px 0px;
+      }
+      .services-hdr-description {
+        font-size: 24px;
+        margin: 10px 0px;
+      }
+      .service-icon-ctr {
+        height: 240px;
+        width: 240px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        align-items: center;
+      }
+      .service-icon-ctr > img {
+        object-fit: cover;
+      }
+      .service-name {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 15px 0px;
+      }
+      @media screen and (max-width: 768px) {
+        .services-ctr {
+          width: 95vw;
+        }
+        .services {
+          flex-direction: column;
+          margin: 50px 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container clearfix">
+        <div class="contact-info float-left"></div>
+        <div class="social-links float-right">
+          <!-- <span class="social-links-facebook"><a href=""><i class="fa fa-facebook text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                   <span class="social-links-twitter"><a href=""><i class="fa fa-twitter text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                   <span class="social-links-instagram"><a href=""><i class="fa fa-instagram text-decoration-none d-flex justify-content-center align-items-center"></i></a></span> -->
+          <span style="font-family: 'Poppins', sans-serif">
+            "info@dreamscom.tech"</span
+          >
+          <span style="font-family: 'Poppins', sans-serif">
+            +256 772 280 228 / +256 788 328 170
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="header">
+      <div class="container clearfix d-flex flex-wrap align-items-center">
+        <div
+          class="contact-info float-left d-block justify-content-left align-items-center flex-grow-1 d-flex d-md-flex d-lg-flex"
+        >
+          <div class="">
+            <a href="/" class="logo"
+              ><img src="images/logo.jpg" class="responsive"
+            /></a>
+          </div>
+          <nav class="nav-menu-container">
+            <ul class="nav-menu d-flex flex-wrap">
+              <li class="p-2"><a href="/">Home</a></li>
+              <li class="p-2"><a href="">Services</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-grow-1 d-none d-md-block d-lg-block"></div>
+        <div class="social-links float-right">
+          <nav class="nav-menu-container">
+            <ul class="nav-menu d-flex flex-wrap">
+              <li class="p-2"><a href="our-team.html">Our Team</a></li>
+              <li class="p-2"><a href="portfolio.html">Portifolio</a></li>
+              <li class="p-2"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!--services-->
+    <section id="services">
+      <div class="services-ctr">
+        <div class="services-hdr">
+          <div class="services-hdr-bold">Our Services</div>
+          <div class="services-hdr-description">
+            Dreamscom, Our Quality Services Offered.
+          </div>
+        </div>
+        <div class="services">
+          <div class="service" data-aos="fade-right">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/Computer-Repair.png"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">Computer Repair &amp; Maintenance</div>
+            <div class="service-description">
+              We offer good and quality Computer &amp; Maintenance from a
+              Proffessionl Team at affordable costs.
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+          <div class="service" data-aos="fade-down">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/ict-consult.jpg"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">ICT Consultancy</div>
+            <div class="service-description">
+              We have experts that offer ICT Consultancy, - Advice on Projects'
+              Designs, Structure and Efficiency of ICT Sytems.
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+          <div class="service" data-aos="fade-left">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/Software-Development.jpg"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">Software Development</div>
+            <div class="service-description">
+              We create software solutions to meet challenges at your
+              Organisations.
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="service" data-aos="fade-right">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/data_analysis.jpg"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">Data Analysis</div>
+            <div class="service-description">
+              We Analyse Data your Organisations' Data that you can draw useful
+              conclusions from.
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+          <div class="service" data-aos="fade-up">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/graphics.jpg"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">Computer Graphics Designs</div>
+            <div class="service-description">
+              We Design Graphics, Printing of Quality Output Graphics, making
+              IDs, Posters and other Graphics work
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+          <div class="service" data-aos="fade-left">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/mobile-app.jpeg"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">Mobile App. Development</div>
+            <div class="service-description">
+              We develop and deploy Mobile Apps to create solutions to your
+              organisations' Challenges.
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="services">
+          <div class="service" data-aos="fade-right">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/supply-of-computers.png"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">
+              Supply Of Computers &amp; Accessories
+            </div>
+            <div class="service-description">
+              We Supply Genuine Computer parts,Accessories and all Computer
+              related Hardware
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+          <div class="service" data-aos="fade-down">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/ict-training.jpg"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">ICT Trainings And Internships</div>
+            <div class="service-description">
+              We Train Different Personnel in Areas around the field of ICT
+              &amp; Offer Student Internships to students of all levels of their
+              academic Journey
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+          <div class="service" data-aos="fade-left">
+            <div class="service-icon-ctr">
+              <img
+                src="/images/networking.png"
+                alt="Software Development At Dreamscom"
+                width="100%"
+                height="100%"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="service-name">Computer Networking</div>
+            <div class="service-description">
+              We do Computer Networking for Organisations, both on large &amp;
+              Small scale, Internet Connections, LAN Connections and others
+            </div>
+            <div class="services-btn-more mt-4">
+              <button class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This is the begining of the footer -->
+    <div class="row p-0 m-0 mt-5 main-footer d-flex flex-fill">
+      <div class="col-md-1 p-0 m-0"></div>
+      <div class="col-md-10 p-0 m-0">
+        <div class="row p-0 m-0 pt-3 d-flex flex-fill justify-content-start">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Dreamscom Technologies Ltd
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="footer-contact-info p-0 m-0">
+                  <div class="p-0 m-0">
+                    <p style="color: #718096">
+                      Plot 19 Maruzi Street Bygon Building<br />P.O Box 130,
+                      Lira Uganda
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Products & Services
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="links-footer p-0 m-0">
+                  <ul>
+                    <li class="p-0 m-0 p-2"><a href="">SchoolSoft</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">PharmacySoft</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">Hospital Manager</a></li>
+                    <li class="p-0 m-0 p-2">
+                      <a href="">Inventory Manager</a>
+                    </li>
+                    <li class="p-0 m-0 p-2"><a href="">SaccoSoft</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Explore
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="links-footer p-0 m-0">
+                  <ul>
+                    <li class="p-0 m-0 p-2"><a href="">About Us</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">Contact Us</a></li>
+                    <li class="p-0 m-0 p-2">
+                      <a href="">Clients and Partners</a>
+                    </li>
+                    <li class="p-0 m-0 p-2"><a href="">News and Events</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Follow Us
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="linkss-footer p-0 m-0 text-white">
+                  <span
+                    ><a
+                      href="https://m.facebook.com/Dreamscom-Technologies-Limited-102776391480463"
+                      ><i class="fab fa-facebook fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-twitter fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-whatsapp fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-linkedin fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-youtube fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 p-0 m-0"></div>
+    </div>
+    <script src="./scripts/aos.js"></script>
+    <script src="Bootstrap/dist/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = "";
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function () {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("txt-rotate");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-rotate");
+          var period = elements[i].getAttribute("data-period");
+          if (toRotate) {
+            new TxtRotate(elements[i], JSON.parse(toRotate), period);
+          }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML =
+          ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+      };
+    </script>
+    <!-- This is the begining of the javascript for the partner sliders -->
+    <script>
+      $(document).ready(function () {
+        $(".customer-logos").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script>
+      $(function () {
+        AOS.init();
+      });
+    </script>
+  </body>
+</html>

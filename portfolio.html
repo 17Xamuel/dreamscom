@@ -1,0 +1,570 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sifudu Peter Masige" />
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha256-m5Awq0wGGRCO7AtN92mhhdGt+TJC70hTou7/t5M11WY="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
+    <title>Dreamscom Technologies Ltd</title>
+    <style type="text/css">
+      ::-webkit-scrollbar {
+        width: 10px;
+        background: #000;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: #343d46;
+        border-radius: 10px;
+        border: none;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #28a745;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #e8008a;
+      }
+      ::-webkit-scrollbar-button {
+        color: #000;
+      }
+      ::-webkit-scrollbar-track-piece {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-corner {
+        background: green;
+      }
+    </style>
+    <style>
+      .staff-img {
+        width: 200px;
+        height: 200px;
+      }
+      .staff-img > img {
+        object-fit: contain;
+      }
+      .main-staffinfo {
+        width: 200px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="topbar" class="d-none d-lg-block">
+      <div class="container clearfix">
+        <div class="contact-info float-left"></div>
+        <div class="social-links float-right">
+          <!-- <span class="social-links-facebook"><a href=""><i class="fa fa-facebook text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                   <span class="social-links-twitter"><a href=""><i class="fa fa-twitter text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                   <span class="social-links-instagram"><a href=""><i class="fa fa-instagram text-decoration-none d-flex justify-content-center align-items-center"></i></a></span> -->
+          <span style="font-family: 'Poppins', sans-serif">
+            "info@dreamscom.tech"</span
+          >
+          <span style="font-family: 'Poppins', sans-serif">
+            +256 772 280 228 / +256 788 328 170
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="header">
+      <div class="container clearfix d-flex flex-wrap align-items-center">
+        <div
+          class="contact-info float-left d-block justify-content-left align-items-center flex-grow-1 d-flex d-md-flex d-lg-flex"
+        >
+          <div class="">
+            <a href="/" class="logo"
+              ><img src="images/logo.jpg" class="responsive"
+            /></a>
+          </div>
+          <nav class="nav-menu-container">
+            <ul class="nav-menu d-flex flex-wrap">
+              <li class="p-2"><a href="/">Home</a></li>
+              <li class="p-2"><a href="services.html">Services</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex-grow-1 d-none d-md-block d-lg-block"></div>
+        <div class="social-links float-right">
+          <nav class="nav-menu-container">
+            <ul class="nav-menu d-flex flex-wrap">
+              <li class="p-2"><a href="our-team.html">Our Team</a></li>
+              <li class="p-2"><a href="portfolio.html">Portifolio</a></li>
+              <li class="p-2"><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <!--portfolio-->
+    <section id="portfolio">
+      <div class="row p-0 m-0 mt-5 team-info">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="row d-flex flex-column">
+            <div>
+              <h2>Our PortFolio</h2>
+            </div>
+            <div class="team-parag">
+              <p>
+                We have managed to work on different Projects for Different
+                Organisations
+              </p>
+            </div>
+            <div class="tabs">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                    >All</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                    >Government Agencies</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-bs-toggle="tab"
+                    href="#contact"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+                    >NGOs</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="row mt-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/kigumba-trusted-by.jpg"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>Kigumba Intensive</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>Academic Institution</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/macsoug.jpg"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>Macos Uganda</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>NGO</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/Taacc-Copy.png"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>Taacc</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>NGO</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/all-saints.png"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>All Saints University</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>Academic Institution</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="/assets/utc.jpg"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>UTC - Lira</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>Academic Institution</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/download.png"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>Defend Defenders</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>NGO</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="row mt-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/kigumba-trusted-by.jpg"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>Kigumba Intensive</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>Academic Institution</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="contact"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <div class="row mt-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-12">
+                      <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-2">
+                          <div
+                            class="main-staffinfo d-flex flex-column align-items-center justify-content-center"
+                          >
+                            <div class="staff-img p-0">
+                              <img
+                                src="assets/kigumba-trusted-by.jpg"
+                                class="p-0 p-2"
+                                style="height: 100%; width: 100%"
+                              />
+                            </div>
+                            <div class="staff-info">
+                              <div class="staff-name pt-2">
+                                <h4>Kigumba Intensive</h4>
+                              </div>
+                              <div class="staff-title">
+                                <p>Academic Institution</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </section>
+    <!--portfolio-->
+
+    <!-- This is the begining of the footer -->
+    <div class="row p-0 m-0 mt-5 main-footer d-flex flex-fill">
+      <div class="col-md-1 p-0 m-0"></div>
+      <div class="col-md-10 p-0 m-0">
+        <div class="row p-0 m-0 pt-3 d-flex flex-fill justify-content-start">
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Dreamscom Technologies Ltd
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="footer-contact-info p-0 m-0">
+                  <div class="p-0 m-0">
+                    <p style="color: #718096">
+                      Plot 19 Maruzi Street Bygon Building<br />P.O Box 130,
+                      Lira Uganda
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Products & Services
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="links-footer p-0 m-0">
+                  <ul>
+                    <li class="p-0 m-0 p-2"><a href="">SchoolSoft</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">PharmacySoft</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">Hospital Manager</a></li>
+                    <li class="p-0 m-0 p-2">
+                      <a href="">Inventory Manager</a>
+                    </li>
+                    <li class="p-0 m-0 p-2"><a href="">SaccoSoft</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Explore
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="links-footer p-0 m-0">
+                  <ul>
+                    <li class="p-0 m-0 p-2"><a href="">About Us</a></li>
+                    <li class="p-0 m-0 p-2"><a href="">Contact Us</a></li>
+                    <li class="p-0 m-0 p-2">
+                      <a href="">Clients and Partners</a>
+                    </li>
+                    <li class="p-0 m-0 p-2"><a href="">News and Events</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="footer-container p-0 m-0 pt-3 w-100">
+              <div class="footer-subcontainer w-100">
+                <div class="footer-heading p-0 m-0">
+                  <p
+                    style="
+                      color: #a0aec0;
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 600;
+                    "
+                  >
+                    Follow Us
+                  </p>
+                </div>
+                <div class=""><hr style="border-color: #718096" /></div>
+                <div class="linkss-footer p-0 m-0 text-white">
+                  <span
+                    ><a
+                      href="https://m.facebook.com/Dreamscom-Technologies-Limited-102776391480463"
+                      ><i class="fab fa-facebook fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-twitter fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-whatsapp fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-linkedin fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                  <span
+                    ><a href=""
+                      ><i class="fab fa-youtube fa-fw p-0 m-0 mt-2"></i></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 p-0 m-0"></div>
+    </div>
+    <script src="./scripts/aos.js"></script>
+    <script src="Bootstrap/dist/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="Bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+
+    <!-- This is the begining of the javascript for the partner sliders -->
+    <script>
+      var triggerTabList = [].slice.call(document.querySelectorAll("#myTab a"));
+      triggerTabList.forEach(function (triggerEl) {
+        var tabTrigger = new bootstrap.Tab(triggerEl);
+        triggerEl.addEventListener("click", function (event) {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
+    </script>
+    <script>
+      var triggerEl = document.querySelector('#myTab a[href="#home-tab"]');
+      // bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+      var triggerFirstTabEl = document.querySelector("#myTab li:first-child a");
+      // bootstrap.Tab.getInstance(triggerFirstTabEl).show(); // Select first tab
+    </script>
+    <script>
+      $(function () {
+        AOS.init();
+      });
+    </script>
+  </body>
+</html>

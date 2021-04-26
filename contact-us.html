@@ -1,0 +1,560 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Sifudu Peter Masige"> 
+        <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha256-m5Awq0wGGRCO7AtN92mhhdGt+TJC70hTou7/t5M11WY="
+        crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins"
+        />
+        <link rel="stylesheet" href="/css/aos.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/animations.css" />
+        <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
+        <title>Dreamscom Technologies Ltd</title>
+        <style type="text/css">
+        ::-webkit-scrollbar {
+            width: 10px;
+            background: #000;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #343d46;
+            border-radius: 10px;
+            border: none;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #28a745;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #e8008a;
+        }
+        ::-webkit-scrollbar-button {
+            color: #000;
+        }
+        ::-webkit-scrollbar-track-piece {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-corner {
+            background: green;
+        }
+        </style>
+        <style>
+        .banner {
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            min-height: fit-content;
+            padding: 20px 0px;
+            background-color: #eeecf6;
+        }
+        .banner-content {
+            text-align: left;
+            padding: 0px 50px;
+            color: #2D378E;
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner-text {
+            margin: 20px 0px;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            color: #28a745;
+        }
+        .banner-image {
+            padding: 0px 50px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /**banner aniamtions*/
+        .banner-image:hover {
+            transform: translateY(-10px);
+        }
+        /**banner aniamtions*/
+        /*trusted by - section*/
+        .trusted-by-hdr {
+            font-size: 35px;
+            font-weight: 500;
+            margin: 25px 0px;
+            color: #2D378E;
+            font-family: 'Poppins', sans-serif;
+        }
+        .trusted-by-ctr {
+            padding: 10px 150px;
+            overflow-x: hidden;
+        }
+        .trusted-by {
+            display: flex;
+            padding: 5px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 25vh;
+            overflow-x: hidden;
+            width: 200px;
+            height: 200px;
+        }
+        .trusted-by-name {
+            font-size: 20px;
+        }
+        /*trusted by - section*/
+
+        /* section-message-ctr */
+        .section-message-ctr {
+            padding: 50px 0px 10px 0px;
+            font-size: 35px;
+            font-weight: 500;
+            text-align: center;
+            color: #2D378E;
+            background: #eeecf6;
+            font-family: 'Poppins', sans-serif;
+        }
+        /* section-message-ctr */
+
+        /* section-mission-ctr */
+        #section-mission {
+            background: #eeecf6;
+        }
+        .mission {
+            border-radius: 10px;
+            flex: 1;
+            height: 350px;
+            background: #e0e0e0;
+            box-shadow: -30px 30px 60px #bebebe, 30px -30px 60px #ffffff;
+        }
+        .mission-hdr {
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            color:#C82333;
+        }
+        .mission-icon-ctr {
+            color: white;
+            background-color: green;
+            height: 50px;
+            border-radius: 25px;
+            width: 50px;
+            /* margin: 10px 0px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .mission-content {
+            font-size: 17px;
+            padding: 10px 0px;
+            color: #2D6BBA;
+            font-family: 'Roboto-Condensed', sans-serif;
+        }
+        /* section-mission-ctr */
+
+        /* testimonial-mission-ctr */
+        .testimonials-ctr {
+            /* color: rgb(207, 207, 207); */
+            /* background: #2D3748; */
+
+        }
+        .projects
+        {
+            color: #35A745;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+        #testimonials {
+            background: #F5F5F5;
+        }
+        .why-u-content {
+            text-align: center;
+            color: #2D6BC2;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .why-u {
+            border-radius: 10px;
+            background: #DDDCE2;
+            box-shadow: -10px 10px 20px #2D6BC2, 10px -10px 20px #4BA745;
+        }
+        .why-u-hdr {
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #28a745;
+            font-family: 'Poppins', sans-serif;
+        }
+        .why-u-icon-ctr {
+            background-color: red;
+            height: 50px;
+            border-radius: 25px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        /* testimonial-mission-ctr */
+
+        /* customer-quote-message-ctr */
+        .customer-quote-ctr {
+            padding: 50px 0px;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            background: #fff;
+        }
+        .customer-quote-up
+        {
+            color: darkblue;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+        .customer-quote-down
+        {
+            color: #28a745;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px;
+        }
+        .customer-quote-down span{
+            color: red;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .customer-quote-hdr {
+            padding-top: 50px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            color: #28a745;
+            background-color: #fff;
+            font-family: 'Poppins', sans-serif;
+            border-bottom: 2px solid red;
+            width:80vw;
+            margin: auto;
+
+        }
+        /*customer-quote-message-ctr */
+
+        @media screen and (max-width: 768px) {
+            .banner {
+            height: fit-content;
+            width: 100vw;
+            }
+            .banner-content {
+            text-align: center;
+            padding: 0px;
+            }
+            .banner-image {
+            display: none;
+            }
+            .banner-text {
+            margin: 0px;
+            font-size: 16px;
+            }
+            .trusted-by-ctr {
+            padding: 5px;
+            overflow-x: hidden;
+            }
+            .mission-ctr {
+            flex-direction: column;
+            }
+            .testimonials-i-ctr {
+            flex-direction: column;
+            }
+            .col-md-1 {
+            display: none;
+            }
+            .section-message-ctr {
+            /* padding: 30px 0px; */
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+            background: #eeecf6;
+            }
+            .customer-quote-ctr {
+            flex-direction: column;
+            }
+        }
+        </style>
+    </head>
+    <body>
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="container clearfix">
+            <div class="contact-info float-left"></div>
+            <div class="social-links float-right">
+            <!-- <span class="social-links-facebook"><a href=""><i class="fa fa-facebook text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                        <span class="social-links-twitter"><a href=""><i class="fa fa-twitter text-decoration-none d-flex justify-content-center align-items-center"></i></a></span>
+                        <span class="social-links-instagram"><a href=""><i class="fa fa-instagram text-decoration-none d-flex justify-content-center align-items-center"></i></a></span> -->
+            <span style="font-family: 'Poppins', sans-serif">
+                "info@dreamscom.tech"</span
+            >
+            <span style="font-family: 'Poppins', sans-serif">
+                +256 772 280 228 / +256 788 328 170
+            </span>
+            </div>
+        </div>
+        </section>
+        <section id="header">
+            <div class="container clearfix d-flex flex-wrap align-items-center">
+              <div
+                class="contact-info float-left d-block justify-content-left align-items-center flex-grow-1 d-flex d-md-flex d-lg-flex"
+              >
+                <div class="">
+                  <a href="/" class="logo"
+                    ><img src="images/logo.jpg" class="responsive"
+                  /></a>
+                </div>
+                <nav class="nav-menu-container">
+                  <ul class="nav-menu d-flex flex-wrap">
+                    <li class="p-2"><a href="/">Home</a></li>
+                    <li class="p-2"><a href="">Services</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="flex-grow-1 d-none d-md-block d-lg-block"></div>
+              <div class="social-links float-right">
+                <nav class="nav-menu-container">
+                  <ul class="nav-menu d-flex flex-wrap">
+                    <li class="p-2"><a href="/">Our Team</a></li>
+                    <li class="p-2"><a href="">Portifolio</a></li>
+                    <li class="p-2"><a href="">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+       <!-- This is the begining of the body -->
+       <div class="row m-0 p-0 pt-3">
+           <div class="col-md-1"></div>
+           <div class="col-md-10">
+              <div class="row p-0 m-0">
+                <div class="col-md-6 p-2">
+                   <div class="p-2">
+                       <div class="contact-heading"><h3 style="font-family: 'Roboto',sans-serif; font-size:20px;font-weight: noemal;">Contact <span>Us</span></h3></div>
+                       <form action="" method="" class="formm">
+                           <div class="form-row">
+                               <div class="col form-group">
+                                   <label>Your name <span>*</span></label>
+                                   <input name="name" type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label>Your email address <span>*</span></label>
+                                    <input type="text" class="form-control" name="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label>Subject <span>*</span></label>
+                                    <input type="text" class="form-control" name="subject">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col form-group">
+                                    <label>Your Message <span>*</span></label>
+                                    <textarea type="text" class="form-control" style="height:80px;"></textarea>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <btn class="btn btn-primary submit">Send Message</btn>
+                            </div>
+                       </form>
+                    </div>
+                </div>
+                <div class="col-md-6 p-2">
+                    <div class="p-2">
+                        <div class="contact-heading"><h3 style="font-family: 'Roboto',sans-serif; font-size:20px;font-weight: 700;">Our <span>Offices</span></h3></div>
+                        <div class="faclass pt-2" style="font-family: 'Poppins'"><span><i class="fa fa-map-marker fa-fw"></i></span> &nbsp;&nbsp;<b>Address:</b></div>
+                        <div class="para pt-3">
+                            <p>Lira Office<br>
+                            P.O Box 130, Lira Uganda<br>
+                            Plot 19 Bygon Enterprise Building<br>
+                            Maruzi Road</p>
+                        </div>
+                        <div class="faclass pb-2" style="font-family: 'Poppins'"><span><i class="fa fa-phone fa-fw"></i></span> &nbsp;&nbsp;<b>Phone:</b> +256 772 280 228 / +256 779 063 287</div>
+                        <div class="faclass pt-2" style="font-family: 'Poppins'"><span><i class="fa fa-envelope fa-fw"></i></span> &nbsp;&nbsp;<b>Email:</b> info@dreamscom.tech</div>
+                        <div class=""><hr></div>
+                        <div class="contact-heading"><h3 style="font-family: 'Poppins',sans-serif; font-size:20px;font-weight: 700;">Business <span>Hours</span></h3></div>
+                        <div class="para">Monday - Friday: 8:00am to 5:30pm</div>
+                        <div class="para">Saturday: 8:00am to 1:30pm</div>
+                        <div class="para">Monday: Closed</div>
+                    </div> 
+                 </div>
+              </div> 
+           </div>
+           <div class="col-md-1"></div>
+       </div>
+       <!-- This is the end of the body -->
+       <!-- This is the begining of the footer-->
+       <div class="row p-0 m-0 mt-5 main-footer d-flex flex-fill">
+        <div class="col-md-1 p-0 m-0"></div>
+        <div class="col-md-10 p-0 m-0">
+          <div class="row p-0 m-0 pt-3 d-flex flex-fill justify-content-start">
+            <div
+              class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+            >
+              <div class="footer-container p-0 m-0 pt-3 w-100">
+                <div class="footer-subcontainer w-100">
+                  <div class="footer-heading p-0 m-0">
+                    <p
+                      style="
+                        color: #a0aec0;
+                        font-size: 16px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                      "
+                    >
+                      Dreamscom Technologies Ltd
+                    </p>
+                  </div>
+                  <div class=""><hr style="border-color: #718096" /></div>
+                  <div class="footer-contact-info p-0 m-0">
+                    <div class="p-0 m-0">
+                      <p style="color: #718096">
+                        Plot 19 Maruzi Street Bygon Building<br />P.O Box 130,
+                        Lira Uganda
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+            >
+              <div class="footer-container p-0 m-0 pt-3 w-100">
+                <div class="footer-subcontainer w-100">
+                  <div class="footer-heading p-0 m-0">
+                    <p
+                      style="
+                        color: #a0aec0;
+                        font-size: 16px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                      "
+                    >
+                      Products & Services
+                    </p>
+                  </div>
+                  <div class=""><hr style="border-color: #718096" /></div>
+                  <div class="links-footer p-0 m-0">
+                    <ul>
+                      <li class="p-0 m-0 p-2"><a href="">SchoolSoft</a></li>
+                      <li class="p-0 m-0 p-2"><a href="">PharmacySoft</a></li>
+                      <li class="p-0 m-0 p-2"><a href="">Hospital Manager</a></li>
+                      <li class="p-0 m-0 p-2">
+                        <a href="">Inventory Manager</a>
+                      </li>
+                      <li class="p-0 m-0 p-2"><a href="">SaccoSoft</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+            >
+              <div class="footer-container p-0 m-0 pt-3 w-100">
+                <div class="footer-subcontainer w-100">
+                  <div class="footer-heading p-0 m-0">
+                    <p
+                      style="
+                        color: #a0aec0;
+                        font-size: 16px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                      "
+                    >
+                      Explore
+                    </p>
+                  </div>
+                  <div class=""><hr style="border-color: #718096" /></div>
+                  <div class="links-footer p-0 m-0">
+                    <ul>
+                      <li class="p-0 m-0 p-2"><a href="">About Us</a></li>
+                      <li class="p-0 m-0 p-2"><a href="">Contact Us</a></li>
+                      <li class="p-0 m-0 p-2">
+                        <a href="">Clients and Partners</a>
+                      </li>
+                      <li class="p-0 m-0 p-2"><a href="">News and Events</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-sm-6 col-md-4 col-lg-3 p-4 d-flex justify-content-center align-items-start"
+            >
+              <div class="footer-container p-0 m-0 pt-3 w-100">
+                <div class="footer-subcontainer w-100">
+                  <div class="footer-heading p-0 m-0">
+                    <p
+                      style="
+                        color: #a0aec0;
+                        font-size: 16px;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                      "
+                    >
+                      Follow Us
+                    </p>
+                  </div>
+                  <div class=""><hr style="border-color: #718096" /></div>
+                  <div class="linkss-footer p-0 m-0 text-white">
+                    <span
+                      ><a
+                        href="https://m.facebook.com/Dreamscom-Technologies-Limited-102776391480463"
+                        ><i class="fab fa-facebook fa-fw p-0 m-0 mt-2"></i></a
+                    ></span>
+                    <span
+                      ><a href=""
+                        ><i class="fab fa-twitter fa-fw p-0 m-0 mt-2"></i></a
+                    ></span>
+                    <span
+                      ><a href=""
+                        ><i class="fab fa-whatsapp fa-fw p-0 m-0 mt-2"></i></a
+                    ></span>
+                    <span
+                      ><a href=""
+                        ><i class="fab fa-linkedin fa-fw p-0 m-0 mt-2"></i></a
+                    ></span>
+                    <span
+                      ><a href=""
+                        ><i class="fab fa-youtube fa-fw p-0 m-0 mt-2"></i></a
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1 p-0 m-0"></div>
+      </div>
+    </body>
+</html>
+<script src="Bootstrap/dist/jquery/jquery.min.js"></script>
+<script src="./scripts/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="Bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
