@@ -638,7 +638,7 @@ a {
     font-size: 23px;
   }
   .faclass span{
-      backgground: #00274F;
+      /* background: #00274F; */
       padding: 8px;
   }
   .meet-dreamscom
@@ -680,6 +680,7 @@ a {
   .main-staffinfo
   {
       border: 1px solid green;
+      border-radius: 5px;
   }
   .main-staffinfo .staff-name h4{
     color: #0d6efd;
